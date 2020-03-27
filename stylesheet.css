@@ -1,0 +1,505 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    height: 72px;
+    width: 100%;
+    background-color: #f76c6c;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    opacity: 0.9;
+  }
+  
+  .logo {
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .header-left{
+      float: left;
+  }
+
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 72px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: #374785;
+    border-color: #204d74;
+  }
+
+
+  .sitename{
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    font-size: x-large;
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+.tagline{
+    position: absolute;
+    top: 55px;
+    left:0px;
+    width: 200%;
+    font-weight: bold;
+}
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    top: 72%;
+    left: 142%;
+    margin-left: -40px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  /*top-wrapper */
+  .top-wrapper {
+    display: flex;
+    align-items: baseline;
+    padding: 104px 0 40px 0;
+    padding-left: 48px;
+    padding-right: 100px;
+    background-color: #a8d0e6;
+    background-size: cover;
+    float: left;
+  }
+  
+  .top-wrapper p {
+    opacity: 1;
+  }
+
+/*TODO*/  
+ .todo{
+   box-sizing: border-box;
+   background-color: #f8e9a1;
+   margin-right: 50px;
+   color:black;
+   display: flex;
+   flex-direction: column;
+   width: 450px;
+   border: outset;
+   border-radius: 2px;
+   font-weight: 6.0;
+   font: bold;
+   font-size: large;
+   opacity: 0.9;
+  }
+
+.todo h1{
+   text-align: center;
+   opacity: 1;
+   width: 100%;
+   background-color: whitesmoke;
+  }
+
+  /*list*/
+.todo ul{
+	list-style: none;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+}
+
+.todo input{
+    height: 35px;
+    opacity: 1;
+    width: 80%;
+    float: left;
+    background-color: white;
+}
+
+li{
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    border: 0.5px solid whitesmoke;
+    transition: 0.2s;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+li.checked{
+    text-decoration: line-through;
+    background-color: #eeda76;
+}
+
+li:hover{
+  background-color: #eeda76;
+}
+.close {
+    position:absolute;
+    right: 0px;
+    top: 0;
+    padding: 4px 10px 4px 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+.close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+.addBtn {
+  padding:10px 4px;
+  width: 20%;
+  height: 35px;
+  background: #d9d9d9;
+  color: black;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+/* CONTENT*/
+  .content{
+    margin-left: 2px;
+    float:right;
+    display: flex;
+    flex-direction: column;
+    font-size:xx-large;
+    color: black;
+    font-weight: 6.0;
+    font: bold;
+    text-align: right;
+    line-height: 1.4;
+  }
+
+  .content p{
+      float: right;
+  }
+
+  .blog-img{
+    width: 350px;
+    height: 200px;
+}
+
+.blog-img:hover .tooltiptext2{
+    visibility: visible;
+}
+
+#blogcontent{
+    font-size: 15px;
+    color: #1a1a1d;
+}
+
+.bloghover p{
+    position: absolute;
+    top: 544px;
+    right: 103px;
+    font-size: 19px;
+    color: black;
+    cursor: pointer;
+}
+
+.content-left{
+    position: absolute;
+    top: 505px;
+    left:48px;
+    text-align: left;
+}
+
+/*lesson wrapper*/
+.lesson-wrapper{
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+}
+
+.heading{
+    padding-top: 50px;
+    padding-bottom:20px;
+    text-align: center;
+}
+
+.lesson{
+    margin: 7px 0;
+    position: relative;
+    display: flex;
+    border: 1.5px solid #286090;
+}
+
+.lesson p{
+    position: absolute;
+    top: 90px;
+    left: 400px;
+    margin: 0 auto;
+    font-size: x-large;
+    text-align: center;
+}
+
+.lesson h4{
+    position: absolute;
+    bottom:2px;
+    left: 135px;
+}
+
+.lesson button{
+    position: absolute;
+    bottom: 11px;
+    right: 4px;
+    color: #fff;
+    padding: 2px 2px;
+    background-color:green;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow:2px 2.5px rgb(44, 201, 44);;
+}
+
+.lesson button:active{
+    /* background-color:#337ab7; */
+    background-color: #2d545e;
+    box-shadow: none;
+}
+
+
+.courseimg{
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    padding-bottom: 18px;
+  }
+
+  /*message wrapper*/
+  .message-wrapper {
+    border-bottom: 1.2px solid #a8d0e6;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f7f7f7;
+    line-height: 1.3;
+    opacity: 1;
+}
+  
+  .message {
+    padding: 15px 25px;
+    font-size: 15px;
+    background-color: #f76c6c;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    box-shadow: 3.5px 3.5px white;
+  }
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+
+/*FOOTER*/  
+ .footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f76c6c;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  footer img{
+      position: relative;
+      top: -4px;
+  }
+  footer h4{
+    position: relative;
+    top:25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+  }
+
+  footer h5{
+    position: relative;
+    top:5px;
+    left: 59px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+  }
+
+  /* Modal  */
+/* Modal is not visible by default. Modal become visible by changing the display property */
+.signup-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+  
+  .fa-times {
+    position: absolute;
+  
+    top: 12px;
+    right: 12px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .fa-times:hover {
+    color: #8491a5;
+    background-color: #ccd9ea;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #signup-form {
+    width: 100%;
+  }
+  
+  #signup-form h2 {
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  
+  #signup-form input {
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+  }
+  
+  #submit-btn {
+    display: inline-block;
+    padding: 14px 135px;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+  
+  .login-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+  }
+
+  #login-submit-btn {
+    display: inline-block;
+    padding: 14px 95px;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+
+ 
+/*TEXT HIGHLIGHTS*/
+  .highlight{
+    color: black;
+    background-color: #f76c6c
+  }
+
+  
+  .highlight2{
+    color: #f76c6c;
+  }

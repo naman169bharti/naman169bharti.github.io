@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <!-- Settings of the HTML document -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courseify</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body style="background-color: black;">
+    <!-- Header -->
+    <header>
+        <div class="container">
+          <div class="header-left tooltip">
+              <div><img class="logo" src="https://img.icons8.com/windows/64/000000/laptop-coding.png" href="#"></div>
+              <span class="tooltiptext">About us</span>
+            <div><h4 class="sitename">Courseify</h4></div>
+          </div>
+          <span class="fa fa-bars menu-icon"></span>
+          <div class="header-right">
+            <a href="#" class="signup">Sign Up</a>
+            <a href="#" class="login">Log in</a>
+            <i class="code icon"></i>
+          </div>
+        </div>
+      </header>
+<!-- Top-wrapper -->
+<div class="top-wrapper">
+    <div class="todo">
+        <h1>My Personal </h1>
+        <h1>To-Do App</h1>
+        <div class="inputclass"><input id="myInput" type="text" placeholder="New To-Do...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+	    <ul id="myUL">
+		    <li>Go To Guitar Class</li>
+		    <li>Buy Groceries</li>
+		    <li>Jin's birthday Reminder</li>
+        </ul>
+    </div>
+    
+    <div class="content">
+            <p>Want to make your own <br>Personal Applications like this <span class="highlight2">To-do App?</span><br><br>
+                You can learn to make a <span class="highlight2">blogging site</span>  from scratch or perhaps some fun <span class="highlight2">games</span> to play.<br><br>
+                <img class="blog-img" src="images/blog.jpg">
+        <p id="blogcontent"><i>This is a blogging site you'll be<br>making yourself during course learning!</p></i>
+        <span class="bloghover"><p><i><u>go to the website</u></i></p></span>
+            </p>
+            <p class="content-left">Start learning Web Development today with <br><b><span class="highlight">Courseify</span></b> to become a Web Developer and learn<br>all these amazing stuff.</p>
+    </div>
+</div>
+
+<!-- Lesson -->
+<div class="lesson-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h1>Choose a course according to your needs!</h1>
+      </div>
+      <div class="lessons">
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img class="courseimg" src="images/beginner.png" />
+            <h4>Beginner Level</h4>
+            <button href="#">Click here to enroll in this course</button>
+          </div>
+          <p class="text-contents">
+            This course introduces you to web development and all the languages associated with it. Choose this if you're new to Web Development.
+          </p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img class="courseimg" src="images/intermediate.png" />
+            <h4>Intermediate Level</h4>
+            <button href="#">Click here to enroll in this course</button>
+          </div>
+          <p class="text-contents">
+            This is an intermediate level course for people versed with HTML and CSS. It teaches advanced technologies and ways to make your website look amazing.
+          </p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img class="courseimg" src="images/advanced.jpg" />
+            <h4>Advanced Level</h4>
+            <button href="#">Click here to enroll in this course</button>
+          </div>
+          <p class="text-contents">
+            From the latest technologies, we introduce you to this new course to make you versed with advanced concepts to make our website better than ever.
+          </p>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+</div>
+<!-- Message -->
+<div class="message-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>Ready to start your journey as Web Developer?</h2>
+        <h3>Let's learn to code, learn to create amazing websites!</h3>
+      </div>
+      <span class="btn message">Start coding!</span>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div>
+        <h4>Courseify:</h4><br><h5>Courses Simplified</h5>
+      </div>
+      <div>
+        <img class="bottom-logo" style="cursor: pointer;"src="https://img.icons8.com/windows/64/000000/laptop-coding.png" href="#">
+      </div>
+    </div>
+</footer>
+
+<!-- Sign up modal -->
+<div class="signup-modal-wrapper" id="signup-modal">
+    <div class="modal">
+      <div class="close-modal">
+        <i style="font-size: large" class="fa fa-times">×</i>
+      </div>
+      <div id="signup-form">
+        <h2>Sign up with email</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="Email" />
+          <input
+            class="form-control"
+            type="password"
+            placeholder="Password"
+          />
+          <div id="submit-btn">Sign up</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Log In modal -->
+<div class="login-modal-wrapper" id="login-modal">
+    <div class="modal">
+      <div class="closeLoginmodal">
+        <i style="font-size: large" class="fa fa-times">×</i>
+      </div>
+      <div id="signup-form">
+        <h2>Already have an account?<br>Log in here.</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="UserID" />
+          <input
+            class="form-control"
+            type="password"
+            placeholder="Password"
+          />
+          <div id="login-submit-btn">Click here to Log in</div>
+        </form>
+      </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
