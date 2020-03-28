@@ -316,7 +316,7 @@ li:hover{
     left: 135px;
 }
 
-.lesson button{
+.lesson a{
     position: absolute;
     bottom: 11px;
     right: 4px;
@@ -328,7 +328,7 @@ li:hover{
     box-shadow:2px 2.5px rgb(44, 201, 44);;
 }
 
-.lesson button:active{
+.lesson a:active{
     /* background-color:#337ab7; */
     background-color: #2d545e;
     box-shadow: none;
@@ -503,3 +503,56 @@ li:hover{
   .highlight2{
     color: #f76c6c;
   }
+
+  
+  /* course*/
+  .course-wrapper{
+    display: flex;
+  padding-top: 104px;
+  padding-bottom: 60px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: whitesmoke;
+}
+
+.course img{
+    width:600px;
+    height: 305px;
+    padding-bottom: 10px;
+}
+
+.course h1, .course h2{
+    padding-bottom: 10px;
+  }
+
+.content2{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.content2 li{
+  line-height: 1.5;
+}
+
+.course h3{
+  border: 1.5px solid #286090;
+  width: 600px;
+  padding: 10px;
+}
+
+.content2 button{
+  position: relative;
+  top:40px;
+  left: 350px;
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+  box-shadow:2px 2.5px rgb(44, 201, 44);
+}
+
+
+.content2 button:active{
+  /* background-color:#337ab7; */
+  background-color: #2d545e;
+  box-shadow: none;
+}
