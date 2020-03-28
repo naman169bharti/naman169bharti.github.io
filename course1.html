@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <!-- Settings of the HTML document -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courseify: Courses Simplified</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body style="background-color: black;">
+    <!-- Header -->
+    <header>
+        <div class="container">
+          <div class="header-left tooltip">
+              <div><img class="logo" src="https://img.icons8.com/windows/64/000000/laptop-coding.png" href="#"></div>
+              <span class="tooltiptext">About us</span>
+            <div><h4 class="sitename">Courseify</h4></div>
+          </div>
+          <span class="fa fa-bars menu-icon"></span>
+          <div class="header-right">
+            <a href="#" class="signup">Sign Up</a>
+            <a href="#" class="login">Log in</a>
+            <i class="code icon"></i>
+          </div>
+        </div>
+      </header>
+<!-- course-wrapper -->
+<div class="course-wrapper">
+<div class="course">
+    <h1><u>Introduction to Web Development</h1></u>
+    <img src="images/beginner.png">
+    <h3>This course introduces you to web development and all the languages associated with it. Choose this if you're new to Web Development.</h3>
+</div>
+<div class="content2">
+    <h2>What you'll learn :</h2>
+    <ul>
+        <li>Make REAL web applications using cutting-edge technologies</li>
+        <li>Create a blog application from scratch using Express, MongoDB, and Semantic UI</li>
+        <li>Write your own browser-based game</li>
+        <li>Think like a developer. Become an expert at Googling code questions!</li>
+        <li>Write web apps with full authentication</li>
+        <li>Write Javascript functions, and understand scope and higher order functions</li>
+        <li>Use common JS data structures like Arrays and Objects</li>
+        <li>Create static HTML and CSS portfolio sites and landing pages</li>
+        <li>Create a beautiful animated todo list application</li>
+        <li>And much more..</li>
+    </ul>
+    <button>Enroll in this course!</button>
+</div>
+</div>
+<!-- Message -->
+<div class="message-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>Ready to start your journey as Web Developer?</h2>
+        <h3>Let's learn to code, learn to create amazing websites!</h3>
+      </div>
+      <span class="btn message">Start coding!</span>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div>
+        <h4>Courseify:</h4><br><h5>Courses Simplified</h5>
+      </div>
+      <div>
+        <img class="bottom-logo" style="cursor: pointer;"src="https://img.icons8.com/windows/64/000000/laptop-coding.png" href="#">
+      </div>
+    </div>
+</footer>
+
+<!-- Sign up modal -->
+<div class="signup-modal-wrapper" id="signup-modal">
+    <div class="modal">
+      <div class="close-modal">
+        <i style="font-size: large" class="fa fa-times">×</i>
+      </div>
+      <div id="signup-form">
+        <h2>Sign up with email</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="Email" />
+          <input
+            class="form-control"
+            type="password"
+            placeholder="Password"
+          />
+          <div id="submit-btn">Sign up</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Log In modal -->
+<div class="login-modal-wrapper" id="login-modal">
+    <div class="modal">
+      <div class="closeLoginmodal">
+        <i style="font-size: large" class="fa fa-times">×</i>
+      </div>
+      <div id="signup-form">
+        <h2>Already have an account?<br>Log in here.</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="UserID" />
+          <input
+            class="form-control"
+            type="password"
+            placeholder="Password"
+          />
+          <div id="login-submit-btn">Click here to Log in</div>
+        </form>
+      </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="script2.js"></script>
+</body>
+</html>
